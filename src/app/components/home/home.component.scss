@@ -1,0 +1,41 @@
+.container {
+  height: 100%;
+  background-color: #eee;
+  font-family: 'Roboto', sans-serif;
+}
+.jumbotron{
+  background-color: #2a323d;
+  color: #FFFFFF;
+  padding: 20px 50px;
+
+  .claim{
+    font-weigtht: 100;
+  }
+}
+.app-ctegory{
+  margin: 0 50px;
+  h1{
+    font-weight: 100;
+    font-size: 1.3em;
+  }
+}
+.app-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+@media (min-width: 821px) {
+  p-card{
+    width: 360px;
+  }
+}
+@media (max-width: 820px) {
+  p-card{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+

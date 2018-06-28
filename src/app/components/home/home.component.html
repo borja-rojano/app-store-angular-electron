@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="toolbar">
+
+  </div>
+  <div class="jumbotron">
+    <h1>App Store by DG1 Lab</h1>
+    <div class="claim">Innovation, for examiners by examiners</div>
+  </div>
+  <div class="app-ctegory" *ngFor="let category of appCategory">
+    <h1>{{category}}</h1>
+    <div class="app-list">
+      <p-card
+        routerLink="/elys"
+        *ngFor="let item of apps | appFilter:category"
+        [title]="item.name"
+        [subtitle]="item.desc"
+        styleClass="ui-card-shadow">
+        <p-header>
+          <img src="Card" src="assets/showcase/images/usercard.png">
+        </p-header>
+      </p-card>
+    </div>
+  </div>
+
+
+</div>
