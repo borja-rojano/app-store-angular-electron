@@ -10,7 +10,7 @@
     <h1>{{category}}</h1>
     <div class="app-list">
       <p-card
-        routerLink="/elys"
+        [routerLink]="item.path"
         *ngFor="let item of apps | appFilter:category"
         [title]="item.name"
         [subtitle]="item.desc"
